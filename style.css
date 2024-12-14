@@ -1,0 +1,3512 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background: #f7f7f7;
+                color: #000000;
+                width: 100%;
+                height: 200dvh;
+            }
+            
+            .navbar {
+                background-color: #000000;
+                color: #fff;
+                padding: 1rem 0;
+                width: 100%;
+                z-index: 1000;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+            /*     
+    .navbar {
+        background-color: #000000;
+        color: #fff;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+     */
+            
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+            
+            .boost i {
+                display: none;
+            }
+            
+            .logo img {
+                display: none;
+            }
+            
+            .float .logo {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+            }
+            
+            .nav-links li a {
+                text-decoration: none;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                transition: background 0.3s;
+            }
+            
+            .nav-links li a:hover {
+                background: #000000;
+                border-radius: 5px;
+            }
+            
+            .nav-right {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            .nav-right input {
+                padding: 0.5rem;
+                border-radius: 5px;
+                background-color: transparent;
+                width: 100px;
+                color: white;
+            }
+            
+            .login-btn {
+                padding: 0.5rem 1rem;
+                background-color: rgb(243, 199, 242);
+                color: #4e0148;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: background 0.3s;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+            }
+            
+            .login-btn:hover {
+                background-color: #4e0148;
+                color: rgb(243, 199, 242);
+            }
+            
+            .dropbtn {
+                background-color: #000000;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                right: 0;
+                background-color: rgb(243, 199, 242);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                color: rgb(255, 255, 255);
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #000000;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .con2 {
+                background: url(img/20241212_123121.jpg);
+                width: 100%;
+                height: 70dvh;
+            }
+            
+            .con2 h2 {
+                color: white;
+                font-family: roboto;
+                font-size: 80px;
+                position: absolute;
+                top: 170px;
+                left: 50px;
+            }
+            
+            .btn2 button {
+                background-color: #4e0148;
+                width: 220px;
+                height: 10dvh;
+                color: white;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+                border-color: aliceblue;
+                position: absolute;
+                bottom: 90px;
+                left: 45%;
+            }
+            
+            .upcoming h2 {
+                color: rgb(0, 0, 0);
+                margin-top: 130px;
+                margin-left: 140px;
+            }
+            
+            .con3 {
+                width: 350px;
+                height: 320px;
+                background-color: rgb(243, 199, 242);
+                position: absolute;
+                left: 10%;
+                bottom: -230px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con3 h4 {
+                color: rgb(0, 0, 0);
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+            
+            .con3 .red h3 {
+                color: rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            
+            .con3 .red h4 {
+                color: #ff0000;
+                margin-top: -18px;
+                margin-left: 145px;
+            }
+            
+            .con3 .red button {
+                background-color: transparent;
+                width: 90px;
+                height: 40px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-color: #000000;
+                margin-left: 38px;
+                margin-top: 10px;
+            }
+            
+            .con3 .red h5 {
+                color: rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            
+            .con4 {
+                width: 350px;
+                height: 320px;
+                background-color: rgb(243, 199, 242);
+                position: absolute;
+                right: 10%;
+                bottom: -230px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con4 h4 {
+                color: rgb(0, 0, 0);
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+            
+            .con4 .red h3 {
+                color: rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            
+            .con4 .red h4 {
+                color: #ff0000;
+                margin-top: -18px;
+                margin-left: 145px;
+            }
+            
+            .con4 .red button {
+                background-color: transparent;
+                width: 90px;
+                height: 40px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-color: #000000;
+                margin-left: 38px;
+                margin-top: 10px;
+            }
+            
+            .con4 .red h5 {
+                color: rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            
+            .view button {
+                background-color: #4e0148;
+                width: 150px;
+                height: 7dvh;
+                color: white;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+                border-color: aliceblue;
+                position: absolute;
+                top: 900px;
+                left: 45%;
+            }
+            
+            .explore h2 {
+                color: rgb(0, 0, 0);
+                margin-top: 200px;
+                margin-left: 140px;
+            }
+            
+            .con5 {
+                width: 350px;
+                height: 200px;
+                background-color: rgb(231, 231, 231);
+                position: absolute;
+                left: 10%;
+                top: 1000px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con5 img {
+                width: 350px;
+                height: 160px;
+            }
+            
+            .con5 p i {
+                color: #000000;
+                position: absolute;
+                bottom: 1px;
+                left: 170px;
+                font-size: 26px;
+            }
+            
+            .con6 {
+                width: 350px;
+                height: 200px;
+                background-color: rgb(231, 231, 231);
+                position: absolute;
+                left: 37%;
+                top: 1000px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con6 img {
+                width: 350px;
+                height: 160px;
+            }
+            
+            .con6 p i {
+                color: #000000;
+                position: absolute;
+                bottom: 1px;
+                left: 170px;
+                font-size: 26px;
+            }
+            
+            .con7 {
+                width: 350px;
+                height: 200px;
+                background-color: rgb(231, 231, 231);
+                position: absolute;
+                right: 10%;
+                top: 1000px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con7 img {
+                width: 350px;
+                height: 160px;
+            }
+            
+            .con7 p i {
+                color: #000000;
+                position: absolute;
+                bottom: 1px;
+                left: 170px;
+                font-size: 26px;
+            }
+            
+            .con8 {
+                width: 350px;
+                height: 200px;
+                background-color: rgb(231, 231, 231);
+                position: absolute;
+                left: 10%;
+                top: 1300px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con8 img {
+                width: 350px;
+                height: 160px;
+            }
+            
+            .con9 {
+                width: 350px;
+                height: 200px;
+                background-color: rgb(231, 231, 231);
+                position: absolute;
+                right: 37%;
+                top: 1300px;
+                border-color: #000000 solid 9px;
+            }
+            
+            .con9 img {
+                width: 350px;
+                height: 160px;
+            }
+            
+            footer {
+                background: rgb(243, 199, 242);
+                width: 100%;
+                height: 10dvh;
+                position: absolute;
+                top: 1280px;
+            }
+            
+            footer p {
+                margin-left: 570px;
+                margin-top: 20px;
+            }
+            /* bottom: -180px;
+border-color: #000000 solid 9px;
+
+} */
+            
+            @media (max-width: 768px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 28dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 575.98px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 992px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 1200px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 360px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 400px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 414px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 375px) {
+                body {
+                    height: 280dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 200px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 430px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 118%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 220px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 360px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 142%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 280px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 414px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 123%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 280px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 412px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 124%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 280px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 390px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 131%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 280px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
+            
+            @media (max-width: 375px) {
+                body {
+                    height: 270dvh;
+                }
+                .navbar {
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 1rem 0;
+                    position: fixed;
+                    width: 136%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                .logo img {
+                    width: 80px;
+                    height: 37px;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 13px;
+                }
+                .container {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    height: 5dvh;
+                    width: 280px;
+                }
+                .boost i {
+                    color: rgb(255, 255, 255);
+                    display: block;
+                }
+                .boost i:hover {
+                    background-color: rgb(255, 255, 255);
+                    width: 90px;
+                    height: 40px;
+                    color: #000000;
+                }
+                .boost {
+                    display: inline-block;
+                }
+                .boost i .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .boost i .dropdown-content a {
+                    color: black;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                .boost i .dropdown-content a:hover {
+                    background-color: #550534;
+                }
+                .boost:hover .dropdown-content {
+                    display: block;
+                }
+                .nav-links {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0;
+                    display: none;
+                }
+                .nav-links li {
+                    width: 200px;
+                    display: none;
+                }
+                .nav-links li a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: none;
+                }
+                .nav-right {
+                    flex-direction: row;
+                    width: 200px;
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                    display: none;
+                }
+                .con2 {
+                    width: 510px;
+                    height: 65dvh;
+                }
+                .con2 img {
+                    width: 70px;
+                    height: 20px;
+                }
+                .btn2 button {
+                    position: absolute;
+                    top: 700px;
+                    left: 170px;
+                }
+                .upcoming h2 {
+                    position: absolute;
+                    top: 700px;
+                }
+                .con3 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    top: 900px;
+                    border-radius: 12px;
+                }
+                .con3 h4 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 20px;
+                    margin-left: 40px;
+                }
+                .con3 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+                    margin-left: 40px;
+                }
+                .con3 .red h4 {
+                    color: #ff0000;
+                    margin-top: -18px;
+                    margin-left: 195px;
+                }
+                .con4 {
+                    width: 370px;
+                    height: 26dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1180px;
+                }
+                .con4 h4 {
+                    color: rgb(163, 94, 94);
+                    margin-top: 17px;
+                    margin-left: 40px;
+                }
+                .con4 .red h3 {
+                    color: rgb(0, 0, 0);
+                    margin-top: 19px;
+                    margin-left: 40px;
+                }
+                .con4 .red h4 {
+                    color: #ff0000;
+                    margin-bottom: -18px;
+                    margin-left: 195px;
+                }
+                .view button {
+                    position: absolute;
+                    top: 1450px;
+                    left: 170px;
+                }
+                .explore h2 {
+                    position: absolute;
+                    top: 1380px;
+                }
+                .con5 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1680px;
+                }
+                .con5 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con6 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 1950px;
+                }
+                .con6 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                .con7 {
+                    width: 370px;
+                    height: 23dvh;
+                    position: absolute;
+                    left: 20%;
+                    border-radius: 12px;
+                    top: 2220px;
+                }
+                .con7 img {
+                    width: 368px;
+                    height: 160px;
+                }
+                footer {
+                    background: rgb(243, 199, 242);
+                    width: 510px;
+                    height: 10dvh;
+                    position: absolute;
+                    top: 2480px;
+                }
+                footer p {
+                    margin-left: 170px;
+                    margin-top: 40px;
+                }
+            }
